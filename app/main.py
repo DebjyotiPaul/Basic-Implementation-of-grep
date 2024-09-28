@@ -11,6 +11,14 @@ def match_pattern(input_line, pattern):
     #if pattern[0] == input_line[0]:
     if pattern[0] == "^":
         return match_pattern(input_line, pattern[1:])
+    #elif pattern[-1] == "$" :
+        #return input_line == "" and match_pattern(input_line, pattern[:-1])
+    elif pattern[-1] == "$":
+        l = len(pattern[:-1])
+        if input_line[-l:] == pattern[:-1]:
+            return True
+        
+
     elif pattern[0] == input_line[0]:
         return match_pattern(input_line[1:], pattern[1:])
     elif pattern[:2] == "\d":
@@ -50,6 +58,6 @@ def main():
         exit(0)
     else:
         exit(1)
-        
+
 if __name__ == "__main__":
     main()
