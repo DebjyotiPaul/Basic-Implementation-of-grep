@@ -1,11 +1,14 @@
 [![progress-banner](https://backend.codecrafters.io/progress/grep/19cfe16b-b5fa-4d9b-96bc-f188ecb7e639)](https://app.codecrafters.io/users/codecrafters-bot?r=2qF)
 
-This is a starting point for Python solutions to the
-["Build Your Own grep" Challenge](https://app.codecrafters.io/courses/grep/overview).
+##Python Grep Tool
 
-[Regular expressions](https://en.wikipedia.org/wiki/Regular_expression)
-(Regexes, for short) are patterns used to match character combinations in
-strings. [`grep`](https://en.wikipedia.org/wiki/Grep) is a CLI tool for
-searching using Regexes.
+This repository contains a basic implementation of the classic grep command-line tool, written in Python. The tool allows for pattern matching in input strings using simplified regular expressions. It supports various common features found in grep, such as anchors, character classes, and backreferences.
 
+##Features
+
+* Anchor Matching: Supports ^ (start of line) and $ (end of line) anchors.
+* Character Classes: Handles patterns like \w (word characters), \d (digits), and custom character sets using square brackets [].
+* Wildcards: Matches any single character using the dot ..
+* Backreferences: Supports backreferences such as \1, \2, allowing repeated groups to be matched later in the pattern.
+* Grouping: Supports capturing groups with parentheses () to enable backreference functionality.
 
