@@ -1,4 +1,4 @@
-[![progress-banner](https://backend.codecrafters.io/progress/grep/19cfe16b-b5fa-4d9b-96bc-f188ecb7e639)](https://app.codecrafters.io/users/codecrafters-bot?r=2qF)
+![grep-command](https://github.com/user-attachments/assets/3f4ccabc-1979-4c1e-b2ef-819a65f1c63b)
 
 ## Python Grep Tool
 
