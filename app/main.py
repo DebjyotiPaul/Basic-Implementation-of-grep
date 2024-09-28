@@ -40,6 +40,12 @@ def match_pattern(input_line, pattern):
             return match_pattern(input_line, pattern[2:])
         return False
 
+    elif pattern.startswith("(") and ")" in pattern:
+        first, second = pattern[1 : pattern.index(")")].split("|")
+        pattern_truncated = pattern[pattern.index(")") + 1 :]
+        return match_pattern(input_line, first + pattern_truncated) or match_pattern(input_line, second + pattern_truncated)
+
+
     elif pattern[0] == ".":
         return match_pattern(input_line[1:], pattern[1:])
 
